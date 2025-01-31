@@ -1,26 +1,27 @@
 Table Sections {
-    id int [pk, increment]
+    id int [pk, increment, ref: > Attraction.id]
     name string
-    servicesId int
+    attractionId int
 }
 
 Table Attraction {
-    id int [pk, ref: > Services.attractionId]
+    id int [pk, ref: > Guests.attractionId]
     name string
     
 }
 
 Table Services {
-    id int [pk, ref: > Sections.servicesId]
+    id int [pk, ref: > Guests.servicesId]
     name string
-    guestId int
-    attractionId int
+    
     
 }
 
-Table Users {
-    id int [pk, increment, ref: > Services.guestId]
+Table Guests {
+    id int [pk, increment]
     firstName string
     lastName string
+    attractionId int
+    servicesId int
 }
 
