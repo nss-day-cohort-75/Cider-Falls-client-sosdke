@@ -1,0 +1,26 @@
+Table Sections {
+    id int [pk, increment]
+    name string
+    servicesId int
+}
+
+Table Attraction {
+    id int [pk, ref: > Services.attractionId]
+    name string
+    
+}
+
+Table Services {
+    id int [pk, ref: > Sections.servicesId]
+    name string
+    guestId int
+    attractionId int
+    
+}
+
+Table Users {
+    id int [pk, increment, ref: > Services.guestId]
+    firstName string
+    lastName string
+}
+

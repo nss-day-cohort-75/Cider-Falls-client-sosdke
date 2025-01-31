@@ -1,0 +1,43 @@
+<mxfile host="65bd71144e">
+    <diagram id="9U2mpX4anKDOZ7stplef" name="Page-1">
+        <mxGraphModel dx="1883" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="12" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="240" y="100" width="470" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="170" width="300" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="park logo and name" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="110" width="430" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="NE" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="200" width="75" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="guests&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="170" width="120" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="N" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="200" width="75" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="NW" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="200" width="75" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="SE" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="280" width="75" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="S" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="280" width="75" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="SW" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="280" width="75" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="contact info etc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="260" y="380" width="430" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
