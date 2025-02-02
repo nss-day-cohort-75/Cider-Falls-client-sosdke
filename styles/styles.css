@@ -1,42 +1,4 @@
 html {
-  background-color: black;
-  color: aliceblue;
-}
-
-h1 {
-  text-align: center;
-}
-
-.image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 20%;
-  height: auto;
-  padding-bottom: 25px;
-}
-
-article {
-  border: dotted;
-  border-color: ivory;
-  padding: 25px;
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-ul {
-  padding: 3px;
-}
-
-h3 {
-  font-size: medium;
-  font-weight: 100;
-  font-family: "Times New Roman", Times, serif;
-  padding: 3px;
-}
-
-footer {
-  border-top: solid;
-  padding-top: 15px;
-  text-align: center;
+    background-color: black;
+    color: aliceblue;
 }
