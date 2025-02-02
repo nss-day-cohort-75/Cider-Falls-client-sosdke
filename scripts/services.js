@@ -6,7 +6,7 @@ export const generateServicesHTML = () => {
   let servicesHTML = '<section id="services"> ';
 
   services.map((service) => {
-    servicesHTML += `<p data-type="services" data-id="${service.id}" class="services">${service.name}</p>`;
+    servicesHTML += `<p data-type="services" data-name="${service.name}" data-id="${service.id}" class="services">${service.name}</p>`;
   });
 
   servicesHTML += "</section>";
@@ -16,6 +16,7 @@ export const generateServicesHTML = () => {
 
 document.addEventListener("click", (clickEvent) => {
   const itemClicked = clickEvent.target;
+  let serviceNames = ''
 
   if (itemClicked.dataset.type === "services") {
     const servicesID = parseInt(itemClicked.dataset.id);
@@ -24,18 +25,13 @@ document.addEventListener("click", (clickEvent) => {
       if (Array.isArray(attraction.servicesID)) {
         for (const id of attraction.servicesID) {
           if (id === servicesID) {
-            window.alert(
-              `${
-                itemClicked.dataset.name
-              } is available in  ${attractions.name.join(" , ")}`
-            );
+            serviceNames += attraction.name + ' '
           }
         }
       } else if (attraction.servicesID === servicesID) {
-        window.alert(
-          `${itemClicked.dataset.name} is available in  ${attractions.name}`
-        );
+        serviceNames = attraction.name
       }
     }
+    window.alert(`${itemClicked.dataset.name} is available in ${serviceNames}`);
   }
 });
