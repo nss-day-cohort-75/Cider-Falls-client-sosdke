@@ -3,10 +3,10 @@ import { getAttractions, getGuests } from "./database.js";
 const attractions = getAttractions();
 
 export const generateAttractionsHTML = () => {
-  let attractionsHTML = '<section id="attraction">';
+  let attractionsHTML = '<section id="attraction"> ';
 
   attractions.map((attraction) => {
-    attractionsHTML += `<p id="${attraction.id}" name="${attraction.name}" >${attraction.name} </p>`;
+    attractionsHTML += `<p data-type="attraction" data-id="${attraction.id}" data-name="${attraction.name}" >${attraction.name} </p>`;
   });
 
   attractionsHTML += "</section>";
@@ -23,7 +23,7 @@ document.addEventListener("click", (clickEvent) => {
     const guests = getGuests();
     for (const guest of guests) {
       if (guest.attractionID === attractionsID) {
-        return guestCount++;
+        guestCount++;
       }
     }
     window.alert(
