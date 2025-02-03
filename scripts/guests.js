@@ -7,7 +7,7 @@ export const generateGuestsHTML = () => {
 
     guests.map(guest => {
         guestHTML += `<section >
-        <p class="guests">${guest.firstname} ${guest.lastname}</p>
+        <p class="guest-words">${guest.firstname} ${guest.lastname}</p>
         </section>`
     })
     guestHTML += '</article>'

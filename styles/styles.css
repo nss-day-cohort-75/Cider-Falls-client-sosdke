@@ -1,42 +1,152 @@
 html {
-  background-color: black;
-  color: aliceblue;
+  width: auto;
+  font-family: "Orbitron", Arial, Helvetica, sans-serif;
+  object-fit: cover;
+  
+  background-image: url(https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/431258/original/Comet_encke/do-this-star-wars-intro-with-any-text.jpg);
+  color: #ad7d37;
 }
 
+body {
+  width: auto;
+}
+
+.navbar {
+  margin: 3rem 0 2rem 0;
+  width: 100%;
+  display: flex;
+  height: 25rem;
+}
 h1 {
-  text-align: center;
+  text-shadow: 5px 5px 7px white;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 80px;
+  padding-left: 350px;
+  padding-right: 350px;
 }
 
-.image {
+.header-name {
+  width: 60%;
+  height: 30rem;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 100%;
+  height: 25rem;
+}
+.header-image {
+  width: 20%;
+}
+#container {
+  width: 100%;
+}
+.headers {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+.areas-header {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 20%;
+ width: 60%;
+ align-items: flex-end;
+}
+.guest-header {
+  
+  width: 38%;
+}
+
+.section-items {
+  padding-left: 10px;
+}
+
+.section-container {
+  display: flex;
+  flex-flow: column wrap;
+  width: 65%;
+  height: 33rem;
+}
+
+.details {
+  display: flex;
   height: auto;
-  padding-bottom: 25px;
+  width: 100%;
 }
 
-article {
-  border: dotted;
-  border-color: ivory;
-  padding: 25px;
-  margin-left: 50px;
-  margin-right: 50px;
+.section-items {
+  color: #fff;
+  text-shadow: 0px 0px 10px black;
+  width: 30%;
+  height: 45%;
 }
 
-ul {
-  padding: 3px;
+.Guests {
+  display: flex;
+  flex-flow: column wrap;
+  height: 33rem;
+  width: 40%;
 }
 
-h3 {
-  font-size: medium;
-  font-weight: 100;
-  font-family: "Times New Roman", Times, serif;
-  padding: 3px;
+.guest-list {
+  display: flex;
+  flex-flow: column wrap;
+  height: 34rem;
+  width: 40%;
+}
+
+.guest-words {
+  font-weight: bold;
+  font-size: small;
+  padding: 10px;
+}
+.Services-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.Services {
+  display: flex;
+  flex-direction: row;
+}
+#services {
+  display: flex;
+  flex-direction: row;
+}
+
+.services {
+  font-weight: bold;
+  margin-left: 4rem;
+  padding: 10px;
 }
 
 footer {
   border-top: solid;
   padding-top: 15px;
   text-align: center;
+}
+#North {
+  background-size: cover;
+  background-image: url("https://i.imgur.com/kkJQWt3l.jpg");
+}
+#Northeast {
+  background-size: cover;
+  background-image: url("https://masterliveaboards.com/wp-content/uploads/2021/05/Otoh_Gunga.jpg");
+}
+#Northwest {
+  background-size: cover;
+  background-image: url("https://w0.peakpx.com/wallpaper/392/973/HD-wallpaper-sky-city-lando-mining-operation-x-wing-fighters-star-wars.jpg");
+}
+#South {
+  background-size: cover;
+  background-image: url("https://www.hollywoodreporter.com/wp-content/uploads/2015/11/the_planets_of_star_wars_battlefront_teaser_grab.jpg");
+}
+#Southeast {
+  background-size: cover;
+  background-image: url("https://starwarslivinghistory.com/wp-content/uploads/2021/05/mos-espa-arena.jpg?w=1024");
+}
+#Southwest {
+  background-size: cover;
+  background-image: url("https://www.vacationer.travel/wp-content/uploads/2022/05/theed-1-1024x576.jpg");
 }
