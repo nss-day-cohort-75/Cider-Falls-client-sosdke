@@ -6,7 +6,7 @@ export const generateSectionsHTML = () => {
         let sectionsHTML = '<section id="sections">'
 
         sections.map(section => {
-            sectionsHTML += `<p id="${section.id}" name="${section.name}" attractionsID="${section.attractionsID}" >${section.name}</p>`
+            sectionsHTML += `<p id="${section.id}" name="${section.name}" attractionsID="${section.attractionsID}">${section.name}</p>`
         })
 
         sectionsHTML += '</section>'
