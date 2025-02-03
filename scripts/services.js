@@ -16,7 +16,7 @@ export const generateServicesHTML = () => {
 
 document.addEventListener("click", (clickEvent) => {
   const itemClicked = clickEvent.target;
-  let serviceNames = ''
+  let serviceNames = "";
 
   if (itemClicked.dataset.type === "services") {
     const servicesID = parseInt(itemClicked.dataset.id);
@@ -25,11 +25,11 @@ document.addEventListener("click", (clickEvent) => {
       if (Array.isArray(attraction.servicesID)) {
         for (const id of attraction.servicesID) {
           if (id === servicesID) {
-            serviceNames += attraction.name + ' '
+            serviceNames += attraction.name + " ";
           }
         }
       } else if (attraction.servicesID === servicesID) {
-        serviceNames = attraction.name
+        serviceNames = attraction.name;
       }
     }
     window.alert(`${itemClicked.dataset.name} is available in ${serviceNames}`);
