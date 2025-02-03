@@ -324,20 +324,6 @@ const database = {
       servicesID: 1,
       servicesName: "Rafting",
     },
-    /*{
-      id: 2,
-      attractionID: 501,
-      attractionName: "Chamfort River",
-      servicesID: 2,
-      servicesName: "Canoeing",
-    },
-    {
-      id: 3,
-      attractionID: 501,
-      attractionName: "Chamfort River",
-      servicesID: 3,
-      servicesName: "Fishing",
-    },*/
   ],
 
   North: [
@@ -348,20 +334,6 @@ const database = {
       servicesID: 4,
       servicesName: "Hiking",
     },
-    /*{
-      id: 2,
-      attractionID: 502,
-      attractionName: "Lost Wolf Hiking Trail",
-      servicesID: 5,
-      servicesName: "Picknicking",
-    },
-    {
-      id: 3,
-      attractionID: 502,
-      attractionName: "Lost Wolf Hiking Trail",
-      servicesID: 6,
-      servicesName: "Rock Climbing",
-    },*/
   ],
 
   Northwest: [
@@ -372,36 +344,16 @@ const database = {
       servicesID: 5,
       servicesName: "Picknicking",
     },
-    /*{
+
+    {
       id: 2,
-      attractionID: 503,
-      attractionName: "Lodge",
-      servicesID: 7,
-      servicesName: "Lodging",
-    },
-    {
-      id: 3,
-      attractionID: 503,
-      attractionName: "Lodge",
-      servicesID: 8,
-      servicesName: "Parking",
-    },
-    {
-      id: 4,
-      attractionID: 503,
-      attractionName: "Lodge",
-      servicesID: 9,
-      servicesName: "Information",
-    },*/
-    {
-      id: 5,
       attractionID: 504,
       attractionName: "Hotel",
       servicesID: 7,
       servicesName: "Lodging",
     },
     {
-      id: 6,
+      id: 3,
       attractionID: 505,
       attractionName: "Restaurant",
       servicesID: 5,
@@ -417,13 +369,6 @@ const database = {
       servicesID: 3,
       servicesName: "Fishing",
     },
-    /*{
-      id: 2,
-      attractionID: 506,
-      attractionName: "Gander River (Natural Preserve)",
-      servicesID: 4,
-      servicesName: "Hiking",
-    },*/
   ],
 
   South: [
@@ -434,29 +379,16 @@ const database = {
       servicesID: 7,
       servicesName: "Lodging",
     },
-    /*{
+
+    {
       id: 2,
-      attractionID: 507,
-      attractionName: "Campgrounds",
-      servicesID: 8,
-      servicesName: "Parking",
-    },
-    {
-      id: 3,
-      attractionID: 507,
-      attractionName: "Campgrounds",
-      servicesID: 9,
-      servicesName: "Information",
-    },*/
-    {
-      id: 4,
       attractionID: 508,
       attractionName: "Office Park",
       servicesID: 8,
       servicesName: "Parking",
     },
     {
-      id: 5,
+      id: 3,
       attractionID: 509,
       attractionName: "Children Play Areas",
       servicesID: 8,
@@ -472,48 +404,14 @@ const database = {
       servicesID: 4,
       servicesName: "Hiking",
     },
-    /*{
+
+    {
       id: 2,
-      attractionID: 510,
-      attractionName: "Pine Bluffs Trails (Non Beginner)",
-      servicesID: 5,
-      servicesName: "Picknicking",
-    },
-    {
-      id: 3,
-      attractionID: 510,
-      attractionName: "Pine Bluffs Trails (Non Beginner)",
-      servicesID: 10,
-      servicesName: "Zip Lines",
-    },*/
-    {
-      id: 4,
       attractionID: 511,
       attractionName: "Pine Bluffs Trails (Beginner)",
       servicesID: 4,
       servicesName: "Hiking",
     },
-    /*{
-      id: 5,
-      attractionID: 511,
-      attractionName: "Pine Bluffs Trails (Beginner)",
-      servicesID: 5,
-      servicesName: "Picknicking",
-    },
-    {
-      id: 6,
-      attractionID: 511,
-      attractionName: "Pine Bluffs Trails (Beginner)",
-      servicesID: 10,
-      servicesName: "Zip Lines",
-    },
-    {
-      id: 7,
-      attractionID: 505,
-      attractionName: "Pine Bluffs Trails (Beginner)",
-      servicesID: 11,
-      servicesName: "Food Vendors",
-    },*/
   ],
 };
 
