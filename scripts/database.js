@@ -1,12 +1,4 @@
 const database = {
-  Sections: [
-    { id: 101, name: "Northeast", attractionsID: 501 },
-    { id: 102, name: "North", attractionsID: 502 },
-    { id: 103, name: "Northwest", attractionsID: [503, 504, 505] },
-    { id: 104, name: "Southwest", attractionsID: 506 },
-    { id: 105, name: "South", attractionsID: [507, 508, 509] },
-    { id: 106, name: "Southeast", attractionsID: [510, 511] },
-  ],
   Attractions: [
     { id: 501, name: "Chamfort River", servicesID: [1, 2, 3] },
     { id: 502, name: "Lost Wolf Hiking Trail", servicesID: [4, 5, 6] },
@@ -28,6 +20,7 @@ const database = {
       servicesID: [4, 5, 10, 11],
     },
   ],
+
   Services: [
     { id: 1, name: "Rafting" },
     { id: 2, name: "Canoeing" },
@@ -323,10 +316,103 @@ const database = {
       servicesID: 8,
     },
   ],
-};
+  Northeast: [
+    {
+      id: 1,
+      attractionID: 501,
+      attractionName: "Chamfort River",
+      servicesID: 1,
+      servicesName: "Rafting",
+    },
+  ],
 
-export const getSections = () => {
-  return structuredClone(database.Sections);
+  North: [
+    {
+      id: 1,
+      attractionID: 502,
+      attractionName: "Lost Wolf Hiking Trail",
+      servicesID: 4,
+      servicesName: "Hiking",
+    },
+  ],
+
+  Northwest: [
+    {
+      id: 1,
+      attractionID: 503,
+      attractionName: "Lodge",
+      servicesID: 5,
+      servicesName: "Picknicking",
+    },
+
+    {
+      id: 2,
+      attractionID: 504,
+      attractionName: "Hotel",
+      servicesID: 7,
+      servicesName: "Lodging",
+    },
+    {
+      id: 3,
+      attractionID: 505,
+      attractionName: "Restaurant",
+      servicesID: 5,
+      servicesName: "Picknicking",
+    },
+  ],
+
+  Southwest: [
+    {
+      id: 1,
+      attractionID: 506,
+      attractionName: "Gander River (Natural Preserve)",
+      servicesID: 3,
+      servicesName: "Fishing",
+    },
+  ],
+
+  South: [
+    {
+      id: 1,
+      attractionID: 507,
+      attractionName: "Campgrounds",
+      servicesID: 7,
+      servicesName: "Lodging",
+    },
+
+    {
+      id: 2,
+      attractionID: 508,
+      attractionName: "Office Park",
+      servicesID: 8,
+      servicesName: "Parking",
+    },
+    {
+      id: 3,
+      attractionID: 509,
+      attractionName: "Children Play Areas",
+      servicesID: 8,
+      servicesName: "Parking",
+    },
+  ],
+
+  Southeast: [
+    {
+      id: 1,
+      attractionID: 510,
+      attractionName: "Pine Bluffs Trails (Non Beginner)",
+      servicesID: 4,
+      servicesName: "Hiking",
+    },
+
+    {
+      id: 2,
+      attractionID: 511,
+      attractionName: "Pine Bluffs Trails (Beginner)",
+      servicesID: 4,
+      servicesName: "Hiking",
+    },
+  ],
 };
 
 export const getAttractions = () => {
@@ -339,4 +425,28 @@ export const getServices = () => {
 
 export const getGuests = () => {
   return structuredClone(database.Guests);
+};
+
+export const getNortheast = () => {
+  return structuredClone(database.Northeast);
+};
+
+export const getNorth = () => {
+  return structuredClone(database.North);
+};
+
+export const getNorthwest = () => {
+  return structuredClone(database.Northwest);
+};
+
+export const getSoutheast = () => {
+  return structuredClone(database.Southeast);
+};
+
+export const getSouth = () => {
+  return structuredClone(database.South);
+};
+
+export const getSouthwest = () => {
+  return structuredClone(database.Southwest);
 };
