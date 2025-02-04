@@ -17,7 +17,7 @@ const South = generateSouthHTML();
 const Southwest = generateSouthwestHTML();
 
 const Container = document.getElementById("container");
-const render = () => {
+export const render = (guests) => {
   const html = `
       
   <section class="Services-container">
@@ -66,7 +66,7 @@ const render = () => {
     </div>
     <section class="Guests">
         
-    ${Guests}
+    ${guests}
     </section>
     </article>
     `;
@@ -74,4 +74,4 @@ const render = () => {
   Container.innerHTML = html;
 };
 
-render();
+render(Guests);

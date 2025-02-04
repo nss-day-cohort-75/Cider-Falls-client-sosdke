@@ -11,6 +11,11 @@ body {
   width: auto;
 }
 
+#drop-downs {
+  transform: translate(-500px, 1250px);
+
+}
+
 .navbar {
   margin: 3rem 0 2rem 0;
   width: 100%;
@@ -53,7 +58,7 @@ img {
  align-items: flex-end;
 }
 .guest-header {
-  
+
   width: 38%;
 }
 
@@ -64,8 +69,8 @@ img {
 .section-container {
   display: flex;
   flex-flow: column wrap;
-  width: 65%;
-  height: 33rem;
+  width: 70%;
+  height: 70rem;
 }
 
 .details {
@@ -84,15 +89,15 @@ img {
 .Guests {
   display: flex;
   flex-flow: column wrap;
-  height: 33rem;
-  width: 40%;
+  height: 80rem;
+  width: 45%;
 }
 
 .guest-list {
   display: flex;
   flex-flow: column wrap;
-  height: 34rem;
-  width: 40%;
+  height: 80rem;
+  width: 45%;
 }
 
 .guest-words {
