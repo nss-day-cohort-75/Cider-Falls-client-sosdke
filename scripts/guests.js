@@ -1,39 +1,46 @@
 import { getGuests, getAttractions } from './database.js'
+import { render } from './main.js'
 
 const guests = getGuests()
 const attractions = getAttractions()
-let chosenGuest = {}
-let chosenAttraction = {}
+let selectedGuest = NaN
+let selectedAttraction = NaN
 
 const guestsDropDown = () => {
-
-    document.addEventListener('change', (clickEvent) => {
-        const clickedItem = clickEvent.target
-        if (clickedItem.dataset.type === 'guest-drop-down') {
-            chosenGuest = clickedItem.dataset.id
-            console.log(chosenGuest)
-        }
-    })
-
-    let dropDownHTML = `<select id="selected-guest"data-type="guest-drop-down"> <option data-id="0" >Select a guest name</option>`
+    let HTML = '<select id="guestDropDown"> <option id="0">Select guest</option>'
 
     guests.filter(guest => {
-        dropDownHTML += `<option data-id="${guest.id}">${guest.firstname} ${guest.lastname}</option>`
+        HTML += `<option value="${guest.id}">${guest.firstname} ${guest.lastname}</option>`
     })
-    dropDownHTML += '</select>'
-    return dropDownHTML
+    return HTML += '</select>'
 }
+
+document.addEventListener('change', (clickedEvent) => {
+
+    const clickedElement = clickedEvent.target
+
+    if (clickedElement.id === 'guestDropDown') {
+        selectedGuest = parseInt(clickedElement.value)
+    }
+})
 
 const attractionsDropDown = () => {
-
-    let dropDownHTML = `<select data-id="attraction-drop-down"><option id="0" >Select a location</option>`
+    let HTML = '<select id="attractionDropDown"> <option id="0">Select attraction</option>'
 
     attractions.filter(attraction => {
-        dropDownHTML += `<option data-id="${attraction.id}">${attraction.name}</option>`
+        HTML += `<option value="${attraction.id}">${attraction.name}</option>`
     })
-    dropDownHTML += '</select>'
-    return dropDownHTML
+    return HTML += '</select>'
 }
+
+document.addEventListener('change', (clickedEvent) => {
+
+    const clickedElement = clickedEvent.target
+
+    if (clickedElement.id === 'attractionDropDown') {
+        selectedAttraction = parseInt(clickedElement.value)
+    }
+})
 
 const returnAttractionMatch = (guest) => {
     let location = ''
@@ -54,19 +61,26 @@ export const generateGuestsHTML = () => {
         <p class="guest-words">${guest.firstname} ${guest.lastname} (${location.name})</p>
         </section>`
     })
-    guestHTML += `</article> <section id="drop-downs">${guestsDropDown()} ${attractionsDropDown()} <button id="locations-button">Change Locations</button></section>`
+    guestHTML += `</article> <section id="drop-downs"> ${guestsDropDown()} ${attractionsDropDown()} <button id="change-button">Change Locations</button></section>`
     return guestHTML
 }
 
 document.addEventListener(
-    'click', (clickEvent) => {
-        const clickedItem = clickEvent.target
+    'click', 
+    (clickedEvent) => {
 
-        if (clickedItem.id === 'locations-button'){
+        const clickedElement = clickedEvent.target
+
+        if (clickedElement.id === 'change-button') {
+            guests.filter(guest => {
+                if (selectedGuest === guest.id) {
+                    guest.attractionID = selectedAttraction
+                    render(generateGuestsHTML())
+                }
+            })
         }
     }
 )
-
 
 /*
 
